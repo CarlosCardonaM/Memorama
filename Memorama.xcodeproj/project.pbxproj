@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		485FD1C62467CFD0008DF074 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485FD1C52467CFD0008DF074 /* AppDelegate.swift */; };
+		485FD1C82467CFD0008DF074 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485FD1C72467CFD0008DF074 /* SceneDelegate.swift */; };
+		485FD1CA2467CFD0008DF074 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485FD1C92467CFD0008DF074 /* ViewController.swift */; };
+		485FD1CD2467CFD0008DF074 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 485FD1CB2467CFD0008DF074 /* Main.storyboard */; };
+		485FD1CF2467CFD4008DF074 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 485FD1CE2467CFD4008DF074 /* Assets.xcassets */; };
+		485FD1D22467CFD4008DF074 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 485FD1D02467CFD4008DF074 /* LaunchScreen.storyboard */; };
+		485FD1DA2467D7AB008DF074 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485FD1D92467D7AB008DF074 /* CardModel.swift */; };
+		485FD1DC2467D8AF008DF074 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485FD1DB2467D8AF008DF074 /* Card.swift */; };
+		485FD1DE2467ED5A008DF074 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485FD1DD2467ED5A008DF074 /* CardCollectionViewCell.swift */; };
+		488F13362473152A0069070C /* dingcorrect.wav in Resources */ = {isa = PBXBuildFile; fileRef = 488F13322473152A0069070C /* dingcorrect.wav */; };
+		488F13372473152A0069070C /* shuffle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 488F13332473152A0069070C /* shuffle.wav */; };
+		488F13382473152A0069070C /* dingwrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 488F13342473152A0069070C /* dingwrong.wav */; };
+		488F13392473152A0069070C /* cardflip.wav in Resources */ = {isa = PBXBuildFile; fileRef = 488F13352473152A0069070C /* cardflip.wav */; };
+		488F133B247315850069070C /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488F133A247315850069070C /* SoundManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		485FD1C22467CFD0008DF074 /* Memorama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memorama.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		485FD1C52467CFD0008DF074 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		485FD1C72467CFD0008DF074 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		485FD1C92467CFD0008DF074 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		485FD1CC2467CFD0008DF074 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		485FD1CE2467CFD4008DF074 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		485FD1D12467CFD4008DF074 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		485FD1D32467CFD4008DF074 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		485FD1D92467D7AB008DF074 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		485FD1DB2467D8AF008DF074 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		485FD1DD2467ED5A008DF074 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		488F13322473152A0069070C /* dingcorrect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dingcorrect.wav; sourceTree = "<group>"; };
+		488F13332473152A0069070C /* shuffle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shuffle.wav; sourceTree = "<group>"; };
+		488F13342473152A0069070C /* dingwrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dingwrong.wav; sourceTree = "<group>"; };
+		488F13352473152A0069070C /* cardflip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cardflip.wav; sourceTree = "<group>"; };
+		488F133A247315850069070C /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		485FD1BF2467CFD0008DF074 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		485FD1B92467CFD0008DF074 = {
+			isa = PBXGroup;
+			children = (
+				485FD1C42467CFD0008DF074 /* Memorama */,
+				485FD1C32467CFD0008DF074 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		485FD1C32467CFD0008DF074 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				485FD1C22467CFD0008DF074 /* Memorama.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		485FD1C42467CFD0008DF074 /* Memorama */ = {
+			isa = PBXGroup;
+			children = (
+				488F1331247314DE0069070C /* Sounds */,
+				485FD1C52467CFD0008DF074 /* AppDelegate.swift */,
+				485FD1C72467CFD0008DF074 /* SceneDelegate.swift */,
+				485FD1C92467CFD0008DF074 /* ViewController.swift */,
+				485FD1DB2467D8AF008DF074 /* Card.swift */,
+				485FD1D92467D7AB008DF074 /* CardModel.swift */,
+				485FD1DD2467ED5A008DF074 /* CardCollectionViewCell.swift */,
+				488F133A247315850069070C /* SoundManager.swift */,
+				485FD1CB2467CFD0008DF074 /* Main.storyboard */,
+				485FD1CE2467CFD4008DF074 /* Assets.xcassets */,
+				485FD1D02467CFD4008DF074 /* LaunchScreen.storyboard */,
+				485FD1D32467CFD4008DF074 /* Info.plist */,
+			);
+			path = Memorama;
+			sourceTree = "<group>";
+		};
+		488F1331247314DE0069070C /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				488F13352473152A0069070C /* cardflip.wav */,
+				488F13322473152A0069070C /* dingcorrect.wav */,
+				488F13342473152A0069070C /* dingwrong.wav */,
+				488F13332473152A0069070C /* shuffle.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		485FD1C12467CFD0008DF074 /* Memorama */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 485FD1D62467CFD4008DF074 /* Build configuration list for PBXNativeTarget "Memorama" */;
+			buildPhases = (
+				485FD1BE2467CFD0008DF074 /* Sources */,
+				485FD1BF2467CFD0008DF074 /* Frameworks */,
+				485FD1C02467CFD0008DF074 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Memorama;
+			productName = Memorama;
+			productReference = 485FD1C22467CFD0008DF074 /* Memorama.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		485FD1BA2467CFD0008DF074 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "D O G";
+				TargetAttributes = {
+					485FD1C12467CFD0008DF074 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 485FD1BD2467CFD0008DF074 /* Build configuration list for PBXProject "Memorama" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 485FD1B92467CFD0008DF074;
+			productRefGroup = 485FD1C32467CFD0008DF074 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				485FD1C12467CFD0008DF074 /* Memorama */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		485FD1C02467CFD0008DF074 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				485FD1D22467CFD4008DF074 /* LaunchScreen.storyboard in Resources */,
+				485FD1CF2467CFD4008DF074 /* Assets.xcassets in Resources */,
+				488F13382473152A0069070C /* dingwrong.wav in Resources */,
+				488F13392473152A0069070C /* cardflip.wav in Resources */,
+				485FD1CD2467CFD0008DF074 /* Main.storyboard in Resources */,
+				488F13362473152A0069070C /* dingcorrect.wav in Resources */,
+				488F13372473152A0069070C /* shuffle.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		485FD1BE2467CFD0008DF074 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				485FD1DA2467D7AB008DF074 /* CardModel.swift in Sources */,
+				485FD1CA2467CFD0008DF074 /* ViewController.swift in Sources */,
+				485FD1DC2467D8AF008DF074 /* Card.swift in Sources */,
+				485FD1C62467CFD0008DF074 /* AppDelegate.swift in Sources */,
+				485FD1DE2467ED5A008DF074 /* CardCollectionViewCell.swift in Sources */,
+				488F133B247315850069070C /* SoundManager.swift in Sources */,
+				485FD1C82467CFD0008DF074 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		485FD1CB2467CFD0008DF074 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				485FD1CC2467CFD0008DF074 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		485FD1D02467CFD4008DF074 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				485FD1D12467CFD4008DF074 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		485FD1D42467CFD4008DF074 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		485FD1D52467CFD4008DF074 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		485FD1D72467CFD4008DF074 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 28Y3AJZ4MW;
+				INFOPLIST_FILE = Memorama/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DOG.Memorama;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		485FD1D82467CFD4008DF074 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 28Y3AJZ4MW;
+				INFOPLIST_FILE = Memorama/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DOG.Memorama;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		485FD1BD2467CFD0008DF074 /* Build configuration list for PBXProject "Memorama" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				485FD1D42467CFD4008DF074 /* Debug */,
+				485FD1D52467CFD4008DF074 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		485FD1D62467CFD4008DF074 /* Build configuration list for PBXNativeTarget "Memorama" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				485FD1D72467CFD4008DF074 /* Debug */,
+				485FD1D82467CFD4008DF074 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 485FD1BA2467CFD0008DF074 /* Project object */;
+}
